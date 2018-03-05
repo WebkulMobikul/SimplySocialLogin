@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportHeight="128"
+    android:viewportWidth="128">
+
+    <path
+        android:name="facebook"
+        android:fillColor="#3A5895"
+        android:pathData="M121.3,0 L6.7,0 C2.9,0,0,2.9,0,6.7 L0,121.4 C0,125.1,2.9,128.1,6.7,128.1
+L121.4,128.1 C125.1,128.1,128.1,125.2,128.1,121.4 L128.1,6.7
+C128,2.9,125.1,0,121.3,0 Z M84.1,40 L76,40 C74.7,40.1,73.6,40.8,72.9,42
+C72.2,43.2,72,44.5,72,46 L72,56 L84,56 L84,72.1 L72,72.1 L72,104 L55.9,104
+L55.9,72.1 L43.9,72.1 L43.9,55.9 L55.9,55.9 L55.9,40
+C56,35.5,57.6,31.7,60.6,28.7 S67.3,24.1,72,24 L84,24 L84.1,40 L84.1,40 Z" />
+</vector>

@@ -1,0 +1,188 @@
+{
+  "project_info": {
+    "project_number": "1044182399675",
+    "firebase_url": "https://mobikul-prestashop-1c18f.firebaseio.com",
+    "project_id": "mobikul-prestashop-1c18f",
+    "storage_bucket": "mobikul-prestashop-1c18f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044182399675:android:bc68586dc0ba7a15",
+        "android_client_info": {
+          "package_name": "com.webkul.mobikul_prestashop_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044182399675-632bgo83q99chbo0sd214nqfoib87r0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webkul.mobikul_prestashop_app",
+            "certificate_hash": "41f04356aa87c01cbcc60ce1e6c4099869fb9f06"
+          }
+        },
+        {
+          "client_id": "1044182399675-earo9ehj9e44q0gsljnk01o3bqso73s5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webkul.mobikul_prestashop_app",
+            "certificate_hash": "e37144ae42b78afc61d067f8ba493e2bb0f90d14"
+          }
+        },
+        {
+          "client_id": "1044182399675-36ak0m1v4d2d2idal6vcdch98ort81vl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webkul.mobikul_prestashop_app",
+            "certificate_hash": "f83aecbc10a546d46bb887f4d431d7ab2ea11b3c"
+          }
+        },
+        {
+          "client_id": "1044182399675-7cn4s59ha9nkvtmq0ss8el0iuvs7720t.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1044182399675-v31gohg49o27cir7ropubnig97iv70fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbxopi8o33y-OQamqR6Ur18XzKE20_4XQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044182399675:android:051d4eaa8c90382b",
+        "android_client_info": {
+          "package_name": "com.webkul.prestashopRTL"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044182399675-e9m50ctlqlkk8158fbn79efh52brkk9k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webkul.prestashopRTL",
+            "certificate_hash": "f83aecbc10a546d46bb887f4d431d7ab2ea11b3c"
+          }
+        },
+        {
+          "client_id": "1044182399675-2lbfo4ipisemu7hfdqnrldd2ai2fr78g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webkul.prestashopRTL",
+            "certificate_hash": "e37144ae42b78afc61d067f8ba493e2bb0f90d14"
+          }
+        },
+        {
+          "client_id": "1044182399675-7cn4s59ha9nkvtmq0ss8el0iuvs7720t.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1044182399675-v31gohg49o27cir7ropubnig97iv70fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbxopi8o33y-OQamqR6Ur18XzKE20_4XQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044182399675-5h68ivhat87qd233ditbhkh9i6dapt98.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.webkul.prestashopMp"
+              }
+            },
+            {
+              "client_id": "1044182399675-7cn4s59ha9nkvtmq0ss8el0iuvs7720t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044182399675:android:71a05999a0395bc4",
+        "android_client_info": {
+          "package_name": "com.webkul.webkulsocialloginexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044182399675-cop3ltlb1asdafka3s86d3ur0rttsp0q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.webkul.webkulsocialloginexample",
+            "certificate_hash": "41f04356aa87c01cbcc60ce1e6c4099869fb9f06"
+          }
+        },
+        {
+          "client_id": "1044182399675-7cn4s59ha9nkvtmq0ss8el0iuvs7720t.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1044182399675-v31gohg49o27cir7ropubnig97iv70fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbxopi8o33y-OQamqR6Ur18XzKE20_4XQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044182399675-5h68ivhat87qd233ditbhkh9i6dapt98.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.webkul.prestashopMp"
+              }
+            },
+            {
+              "client_id": "1044182399675-7cn4s59ha9nkvtmq0ss8el0iuvs7720t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

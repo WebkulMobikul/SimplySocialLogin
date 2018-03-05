@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">WebkulSocialLoginExample</string>
+    <string name="facebook_app_id" translatable="false">1860840684144097</string>
+    <string name="facebook_scheme" translatable="false">fb1860840684144097</string>
+
+</resources>
