@@ -23,3 +23,117 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Keeping Various Attributes
+-keepattributes Signature
+-keepattributes Exceptions
+-keepattributes InnerClasses
+-keepattributes EnclosingMethod
+-keepattributes *Annotation*
+
+
+# Keeping Various Classes
+# Gson specific classes
+-keep class com.google.**
+-dontwarn com.google.**
+-dontwarn rx.internal.util.**
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.stream.** { *; }
+#OkHttp3 specific classes
+-dontwarn okhttp3.**
+-keep class okhttp3.** {*;}
+-dontnote okhttp3.**
+
+#Keeping Library Classes
+-keep class com.webkul.sociallogin.** { *; }
+-keepclassmembers class com.webkul.sociallogin.** { *; }
+-keepclasseswithmembers class * {
+  @com.webkul.sociallogin.* <methods>;
+}
+
+
+#Ignoring theprogaurd for these classes as packages are of core for us
+-dontnote org.apache.http.**
+-dontnote android.net.http.**
+-dontnote com.google.android.gms.**
+-dontnote com.android.vending.**
+
+
+
+#Proguard rules for faceBook login
+-keepclassmembers class * implements java.io.Serializable {
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
+}
+
+-keepnames class com.facebook.FacebookActivity
+-keepnames class com.facebook.CustomTabActivity
+
+-keep class com.facebook.login.Login
+
+
+### OKIO
+
+# java.nio.file.* usage which cannot be used at runtime. Animal sniffer annotation.
+-dontwarn okio.Okio
+-dontnote okio.Okio
+# JDK 7-only method which is @hide on Android. Animal sniffer annotation.
+-dontwarn okio.DeflaterSink
+-dontnote okio.DeflaterSink
+
+-dontwarn com.squareup.picasso.**
+-dontnote com.squareup.picasso.**
+
+#Twitter Proguard Rules
+-dontwarn com.squareup.okhttp.**
+-dontwarn com.google.appengine.api.urlfetch.**
+-dontwarn rx.**
+-dontwarn retrofit.**
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class com.squareup.okhttp.** { *; }
+-keep interface com.squareup.okhttp.** { *; }
+-keep class retrofit.** { *; }
+-keepclasseswithmembers class * {
+    @retrofit.http.* *;
+}
+
+
+
+
+
+
+
+#-keepattributes Signature
+#-keepattributes Exceptions
+#
+## remove logs
+#-assumenosideeffects class android.util.Log {
+#    public static *** d(...);
+#    public static *** v(...);
+#}
+#
+
+
+
+# Brahamastra
+#-ignorewarnings

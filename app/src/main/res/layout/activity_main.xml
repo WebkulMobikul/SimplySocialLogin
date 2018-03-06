@@ -44,6 +44,7 @@
             android:text=""
             app:srcCompat="@drawable/ic_vector_twitter" />
 
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

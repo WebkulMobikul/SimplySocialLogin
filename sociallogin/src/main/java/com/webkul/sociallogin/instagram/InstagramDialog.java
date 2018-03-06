@@ -25,7 +25,7 @@ import android.widget.TextView;
 
 public class InstagramDialog extends Dialog {
     static final float[] DIMENSIONS_LANDSCAPE = {460, 260};
-    static final float[] DIMENSIONS_PORTRAIT = {280, 420};
+    static final float[] DIMENSIONS_PORTRAIT = {320, 420};
     static final FrameLayout.LayoutParams FILL = new FrameLayout.LayoutParams(
             ViewGroup.LayoutParams.FILL_PARENT,
             ViewGroup.LayoutParams.FILL_PARENT);
@@ -63,6 +63,12 @@ public class InstagramDialog extends Dialog {
                 DIMENSIONS_PORTRAIT : DIMENSIONS_LANDSCAPE;
         addContentView(mContent, new FrameLayout.LayoutParams((int) (dimensions[0] * scale + 0.5f),
                 (int) (dimensions[1] * scale + 0.5f)));
+//
+
+//        addContentView(mContent, new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT,
+//                FrameLayout.LayoutParams.WRAP_CONTENT));
+//        mContent.setMinimumHeight((int) (dimensions[1] * scale + 0.5f));
+//        mContent.setMinimumWidth((int) (dimensions[0] * scale + 0.5f));
         CookieSyncManager.createInstance(getContext());
         CookieManager cookieManager = CookieManager.getInstance();
         cookieManager.removeAllCookie();

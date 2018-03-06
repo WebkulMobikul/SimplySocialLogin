@@ -23,8 +23,8 @@ public class InstagramSession {
 
     /**
      * @param accessToken
-     * @param expireToken
-     * @param expiresIn
+    //     * @param expireToken
+    //     * @param expiresIn
      * @param username
      */
     public void storeAccessToken(String accessToken, String id, String username, String name) {
@@ -61,14 +61,14 @@ public class InstagramSession {
     }
 
     /**
-     * @return
+     * @return api Id
      */
     public String getId() {
         return sharedPref.getString(API_ID, null);
     }
 
     /**
-     * @return
+     * @return api name
      */
     public String getName() {
         return sharedPref.getString(API_NAME, null);
