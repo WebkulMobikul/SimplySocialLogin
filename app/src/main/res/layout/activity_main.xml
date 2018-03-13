@@ -41,8 +41,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@android:color/transparent"
-            android:text=""
-            app:srcCompat="@drawable/ic_vector_twitter" />
+            app:icon="@drawable/ic_vector_twitter"
+            app:label="@string/empty"
+            app:labelColor="@color/tw__composer_white" />
 
 
     </LinearLayout>

@@ -73,15 +73,17 @@
 -keepnames class com.facebook.CustomTabActivity
 
 -keep class com.facebook.login.Login
+-keep class com.twitter.sdk.android.** { *; }
+-dontwarn com.twitter.sdk.android.**
 
 ### OKIO
 
 # java.nio.file.* usage which cannot be used at runtime. Animal sniffer annotation.
--dontwarn okio.Okio
--dontnote okio.Okio
+-dontwarn okio.**
+-dontnote okio.**
 # JDK 7-only method which is @hide on Android. Animal sniffer annotation.
--dontwarn okio.DeflaterSink
--dontnote okio.DeflaterSink
+-dontwarn okio.DeflaterSink.**
+-dontnote okio.DeflaterSink.**
 
 
 -dontwarn com.squareup.picasso.**

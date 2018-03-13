@@ -2,6 +2,9 @@ package com.webkul.sociallogin;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Color;
+import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -24,6 +27,7 @@ import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 
 /**
  * Created by aastha.gupta on 12/12/16.
+ * Custom View for Twitter Login
  */
 
 public class CustomTwitterButton extends TwitterLoginButton {
@@ -34,22 +38,36 @@ public class CustomTwitterButton extends TwitterLoginButton {
     private boolean debug;
     private boolean isInitialized;
 
+    //text colors
+    private int labelCol;
+    //label text
+    private String label;
+    //icon drawable res
+    private @DrawableRes
+    int icon;
+
     public CustomTwitterButton(Context context) {
-        super(context, null);
-        mContext = context;
-        init();
+        this(context, null);
     }
 
     public CustomTwitterButton(Context context, AttributeSet attrs) {
-        super(context, attrs, 0);
-        mContext = context;
-        init();
+        this(context, attrs, 0);
 
     }
 
     public CustomTwitterButton(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         mContext = context;
+        TypedArray a = context.getTheme().obtainStyledAttributes(attrs,
+                R.styleable.CustomTwitterButton, 0, 0);
+        try {
+            //get the text and colors specified using the names in attrs.xml
+            label = a.getString(R.styleable.CustomTwitterButton_label);
+            icon = a.getResourceId(R.styleable.CustomTwitterButton_icon, 0);//0 is default
+            labelCol = a.getInteger(R.styleable.CustomTwitterButton_labelColor, 0);
+        } finally {
+            a.recycle();
+        }
         init();
     }
 
@@ -67,10 +85,11 @@ public class CustomTwitterButton extends TwitterLoginButton {
         if (isInEditMode()) {
             return;
         }
-//        setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_vector_twitter, 0, 0, 0);
-//        setBackgroundColor(Color.TRANSPARENT);
-//        setPadding(10, 10, 10, 10);
-//        setText("");
+        setCompoundDrawablesWithIntrinsicBounds(icon, 0, 0, 0);
+        setBackgroundColor(Color.TRANSPARENT);
+        setPadding(10, 10, 10, 10);
+        setText(label);
+        setTextColor(labelCol);
         setCallback(new Callback<TwitterSession>() {
             @Override
             public void success(Result<TwitterSession> result) {
