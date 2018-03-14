@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <declare-styleable name="CustomTwitterButton">
-        <attr name="icon" format="reference" />
-        <attr name="label" format="string" localization="suggested" />
-        <attr name="labelColor" format="color" />
-    </declare-styleable>
-</resources>
